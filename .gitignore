@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Models & Data (Only keeping small metadata, excluding heavy .pkl if they are too big, 
+# but for this project we want them on Git)
+# !models/
+# !data/
+
+# Frontend
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Logs
+*.log
+backend.log
+
+# Deliverables (We usually don't want this in the main repo as it's a duplicate)
+deliverables/
