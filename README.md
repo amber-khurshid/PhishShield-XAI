@@ -1,5 +1,9 @@
 # PhishShield-XAI: Adversarial Phishing Detection
 
+### Authors:
+- **Muhammad Hashir**
+- **Amber Khurshid**
+
 ![PhishShield Banner](phishshield_banner_1778007048455.png)
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -27,7 +31,7 @@ graph TD
     B --> C{Feature Extraction}
     C -->|Linguistic & TF-IDF| D[Ensemble Model: RF + XGB]
     D --> E[Prediction & Confidence]
-    E --> F[XAI Engine: SHAP & LIME]
+    D --> F[XAI Engine: SHAP & LIME]
     F --> G[LLM Explanation]
     G --> H[Vite Frontend Dashboard]
 ```
