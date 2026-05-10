@@ -152,6 +152,14 @@ The frontend automatically detects the environment and uses:
 - Keep the `api/index.py` file under the root `api/` directory
 - Redeploy after committing the config change
 
+### 1d. **Unmatched Function Pattern Error**
+**Error**: `The pattern "api/index.py" defined in functions doesn't match any Serverless Functions inside the api directory.`
+
+**Solution**:
+- Remove the `functions` block from [vercel.json](vercel.json)
+- Let Vercel auto-detect the Python serverless function from `api/index.py`
+- Keep the rewrite from `/api/:path*` to `/api/index.py`
+
 ### 2. **SHAP Features Unavailable**
 **Error**: `"feature": "unavailable"`
 
