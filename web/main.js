@@ -1,6 +1,9 @@
 import './style.css'
 
-const apiBase = 'http://localhost:8000';
+// Use Vercel API path in production, localhost in development
+const apiBase = typeof window !== 'undefined' && window.location.hostname !== 'localhost' 
+  ? '/api' 
+  : 'http://localhost:8000';
 
 // Elements
 const emailInput = document.getElementById('email-input');

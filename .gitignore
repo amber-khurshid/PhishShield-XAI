@@ -22,3 +22,16 @@ backend.log
 
 # Deliverables (We usually don't want this in the main repo as it's a duplicate)
 deliverables/
+# Vercel
+.vercel
+web/dist/
+api/.vercel
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env.local
+.env.*.local
