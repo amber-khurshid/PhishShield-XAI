@@ -148,7 +148,8 @@ The frontend automatically detects the environment and uses:
 **Error**: `Function Runtimes must have a valid version`
 
 **Solution**:
-- The API function runtime should be set to a supported version such as `python3.12` in [vercel.json](vercel.json)
+- Remove the explicit runtime entry from [vercel.json](vercel.json) and let Vercel auto-detect the Python function runtime
+- Keep the `api/index.py` file under the root `api/` directory
 - Redeploy after committing the config change
 
 ### 2. **SHAP Features Unavailable**
