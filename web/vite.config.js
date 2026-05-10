@@ -5,8 +5,7 @@ export default defineConfig({
   root: './',
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
-    minify: 'terser'
+    emptyOutDir: true
   },
   server: {
     port: 5173,
