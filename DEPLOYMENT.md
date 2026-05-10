@@ -136,6 +136,14 @@ The frontend automatically detects the environment and uses:
 - Check that `.vercelignore` doesn't exclude `models/`
 - Verify `MODEL_DIR` environment variable is set
 
+### 1b. **Serverless Memory Limit Error**
+**Error**: `Serverless Functions are limited to 2048 mb of memory for personal accounts (Hobby plan).`
+
+**Solution**:
+- The deployment is now configured to use `2048 MB` in [vercel.json](vercel.json)
+- If the function still exceeds memory during cold start, reduce model size or move to a Vercel Team/Pro plan
+- Keep SHAP background samples small to lower memory usage
+
 ### 2. **SHAP Features Unavailable**
 **Error**: `"feature": "unavailable"`
 

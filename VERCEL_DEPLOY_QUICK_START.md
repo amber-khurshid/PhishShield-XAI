@@ -10,6 +10,7 @@ Your project is now configured for Vercel deployment with the following setup:
 - FastAPI app wrapped for Vercel serverless functions
 - Includes all explainers (SHAP, LIME)
 - Auto-loads pre-trained models
+- Configured for the 2048 MB Hobby plan limit
 
 ✅ **Frontend** (web/)
 - Vite build optimized for production
