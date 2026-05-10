@@ -144,6 +144,13 @@ The frontend automatically detects the environment and uses:
 - If the function still exceeds memory during cold start, reduce model size or move to a Vercel Team/Pro plan
 - Keep SHAP background samples small to lower memory usage
 
+### 1c. **Invalid Function Runtime Error**
+**Error**: `Function Runtimes must have a valid version`
+
+**Solution**:
+- The API function runtime should be set to a supported version such as `python3.12` in [vercel.json](vercel.json)
+- Redeploy after committing the config change
+
 ### 2. **SHAP Features Unavailable**
 **Error**: `"feature": "unavailable"`
 
